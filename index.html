@@ -1,110 +1,23 @@
-<!DOCTYPE html>
-<html>
 <head>
-    <title>Loading..</title>
-    <style type="text/css">
-      body {
-        margin: 0;
-        padding: 0;
-        background: #262626;
-      }
-      ul {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-        padding: 0;
-      }
-      ul li {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        background: #fff;
-        border-radius: 50%;
-        margin: 2px;
-        animation: animate 2s ease-in-out infinite;
-      }
-      @keyframes animate {
-        0%, 40%, 100% {
-          transform: scale(0.4);
-        }
-        20% {
-          transform: scale(1.7);
-        }
-      }
-      ul li:nth-child(1) {
-        background: #ff6600;
-        box-shadow: 0 0 50px #ff6600;
-        animation-delay: -1.8s;
-      }
-      ul li:nth-child(2) {
-        background: red;
-        box-shadow: 0 0 50px red;
-        animation-delay: -1.6s;
-      }
-      ul li:nth-child(3) {
-        background: yellow;
-        box-shadow: 0 0 50px yellow;
-        animation-delay: -1.4s;
-      }
-      ul li:nth-child(4) {
-        background: green;
-        box-shadow: 0 0 50px green;
-        animation-delay: -1.2s;
-      }
-      ul li:nth-child(5) {
-        background: maroon;
-        box-shadow: 0 0 50px maroon;
-        animation-delay: -1s;
-      }
-      ul li:nth-child(6) {
-        background: blue;
-        box-shadow: 0 0 50px blue;
-        animation-delay: -0.8s;
-      }
-      ul li:nth-child(7) {
-        background: pink;
-        box-shadow: 0 0 50px pink;
-        animation-delay: -0.6s;
-      }
-      ul li:nth-child(8) {
-        background: skyblue;
-        box-shadow: 0 0 50px skyblue;
-        animation-delay: -0.4s;
-      }
-      @media screen and (max-width: 767px) {
-        .mobile-hide {
-          display: none;
-        }
-      }
-    </style>
-  </head>
-  <body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
-    <main>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li class="mobile-hide"></li>
-        <li class="mobile-hide"></li>
-        <li class="mobile-hide"></li>
-      </ul>
-    </main>
-  
-    <script type="text/javascript">
-      //redirect
-      setTimeout(function() {
-        window.location.href='views/main.html'
-      },2000);
-  
-      //disable back btn
-      window.history.forward();
-      function noBack() {
-        window.history.forward();
-      }
-    </script>
-  </body>
-  </html>
+<!-- Data aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+body {
+	background: #000;
+	text-align: center;
+	margin-top: 25vh;
+	color: white;
+	font-size: larger;
+}
+</style>
+</head>
+<body>
+<h2 data-aos="fade-right" data-aos-duration="1500">Work In Progress...</h2>
+
+<!-- Data aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
+</body>
