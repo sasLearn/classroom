@@ -16,7 +16,7 @@ $("#signupForm").submit(function (e) {
     url: `${url}/signup`,
     type: "POST",
     data: form,
-	headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+  	headers: {'Content-Type': 'application/x-www-form-urlencoded'},
     contentType: 'application/x-www-form-urlencoded; charset=utf-8',
     success: function (response) {
 		document.querySelector('#signup-success').style.display = "block";
@@ -42,7 +42,7 @@ $("#loginForm").submit(function (e) {
     url: `${url}/login`,
     type: "POST",
     data: form,
-	headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+  	headers: {'Content-Type': 'application/x-www-form-urlencoded'},
     contentType: 'application/x-www-form-urlencoded; charset=utf-8',
     success: function (response) {
 

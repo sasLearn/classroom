@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Index Page</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body style="background-image: url('background.jpeg');">
+
+  <!-- Start your project here-->
+ <nav class="navbar navbar-expand-lg navbar-dark indigo">
+  <a class="navbar-brand" href="#"><img src="icon.png" height="45" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item" style="background-color: unset;">
+        <a class="nav-link btn stylish-color-dark" href="#">
+          <i class="fas fa-heart fa-lg"></i>
+        </a>
+      </li>
+
+      <li class="nav-item" style="background-color: transparent;">
+        <a class="nav-link btn stylish-color-dark" href="#"><i class="fas fa-camera-retro" aria-hidden="true"></i>Change View</a>
+      </li>
+
+      <li class="nav-item" style="background-color: transparent;">
+        <a class="nav-link btn success-color" href="#">Sign Up</a>
+      </li>
+
+      <li class="nav-item" style="background-color: transparent;">
+        <a class="nav-link btn stylish-color-dark" href="#">LOGIN</a>
+      </li>
+
+    </ul>
+  </div>
+</nav><br><br>
+
+    <div class="container">
+
+      <h4>Switch Case</h4>
+      <p>
+      Switch-case statement is a powerful programming feature that allows you control the flow of your program based on the value of a variable or an expression. 
+      <br>You can use it to execute different blocks of code, depending on the variable value during runtime.
+      <br>In this document, you'll see how imilar switch cases are in whichever programming language you choose.
+      </p>
+    <div id="accordion">
+
+    <div class="card aqua-gradient">
+          <div class="card-header">
+               <a class="collapsed card-link" data-toggle="collapse" href="#collapse1" style="color: black">
+          Javascript switch
+                <i class="fab fa-js-square fa-2x"></i></a>
+          </div>
+          <div id="collapse1" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+                 <code>
+                    <pre>
+
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+              }
+                    </pre>
+                </code>
+          </div>
+          </div>
+        </div><br>
+
+        <div class="card purple-gradient">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapse2" style="color: black">
+        Java Switch <i class="fab fa-java fa-2x"></i>
+      </a>
+      </div>
+      <div id="collapse2" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        <code>
+          <pre>
+
+        int day = 4;
+        switch (day) {
+            case 1:
+            System.out.println("Monday");
+            break;
+            case 2:
+            System.out.println("Tuesday");
+            break;
+            case 3:
+            System.out.println("Wednesday");
+            break;
+            case 4:
+            System.out.println("Thursday");
+            break;
+            case 5:
+            System.out.println("Friday");
+            break;
+            case 6:
+            System.out.println("Saturday");
+            break;
+            case 7:
+            System.out.println("Sunday");
+            break;
+            }
+              // Outputs "Thursday" (day 4)
+                </pre>
+             </code>
+          </div>
+          </div>
+    </div><br>
+
+    <div class="card peach-gradient">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapse3" style="color: black">
+        Php Switch <i class="fab fa-php fa-2x"></i>
+      </a>
+      </div>
+      <div id="collapse3" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        <code>
+                  <pre>
+
+        &lt;?php 
+        $favcolor = "red"; 
+                    
+ switch ($favcolor) { 
+ case "red": 
+    echo "Your favorite color is red!"; 
+    break; 
+ case "blue": 
+    echo "Your favorite color is blue!"; 
+    break; 
+ case "green": 
+    echo "Your favorite color is green!";
+    break; 
+ default: 
+  echo "Your favorite color is neither red, blue,
+   nor green!";
+                    }
+                    ?&gt;
+                    </pre>
+                </code>
+          </div>
+          </div>
+    </div><br>
+
+    <div class="card blue-gradient">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapse4" style="color: black">
+        Python Switch <i class="fab fa-python fa-2x"></i>
+      </a>
+      </div>
+      <div id="collapse4" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>
+     Although popular languages like Java and PHP have in-built switch statement, you may be surprised to know that Python language doesn’t have one. 
+    As such, you may be tempted to use a series of if-else-if blocks, using an if condition for each case of your switch statement.<br>
+    However, because of the jump table, a switch statement is much faster than an if-else-if ladder. 
+    Instead of evaluating each condition sequentially, it only has to look up the evaluated variable/expression once and directly jump to the appropriate branch of code to execute it.<br>
+    Here’s the Python implementation of the above switch statement. In the following example, we create a dictionary named switcher to store all the switch-like cases.
+    </p>         
+        <code>
+            <pre>
+
+        def switch_demo(argument):
+        switcher = {
+            1: "January",
+            2: "February",
+            3: "March",
+            4: "April",
+            5: "May",
+            6: "June",
+            7: "July",
+            8: "August",
+            9: "September",
+            10: "October",
+            11: "November",
+            12: "December"
+        }
+    print switcher.get(argument, "Invalid month")
+            </pre>
+        </code>
+        <p>
+        In the above example, when you pass an argument to the switch_demo function, it is looked up against the switcher dictionary mapping. If a match is found, the associated value is printed, else a default string (‘Invalid Month’) is printed. The default string helps implement the ‘default case’ of a switch statement.
+        </p>
+          </div>
+          </div>
+    </div><br>
+
+    <div class="card unique-color">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapse5" style="color: black">
+        C# Switch <i class="fas fa-code fa-2x"></i>
+      </a>
+      </div>
+      <div id="collapse5" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+        <code>
+        <pre>
+using System;
+
+  class Program
+   {
+     static void Main()
+     {
+      switch (DateTime.Now.DayOfWeek)
+      {
+       case DayOfWeek.Sunday:
+       case DayOfWeek.Saturday:
+         Console.WriteLine("The weekend");
+         break;
+          case DayOfWeek.Monday:
+Console.WriteLine("The first day of the work week.");
+           break;
+              case DayOfWeek.Friday:
+Console.WriteLine("The last day of the work week.");
+           break;
+        default:
+Console.WriteLine("The middle of the work week.");
+                break;   
+                        }
+                    }
+               }
+// The example displays output like the following:
+//    The middle of the work week.
+          </pre>
+    </code>
+          </div>
+          </div>
+    </div><br>
+
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+<footer class="page-footer font-small pt-4">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="color: black">© 2020 Copyright:
+    <a href="#" style="color: black"> ######</a>
+  </div>
+
+  <!-- Start your project here-->
+
+   <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
